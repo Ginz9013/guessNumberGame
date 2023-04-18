@@ -2,16 +2,13 @@ const minNode = document.querySelector("#min");
 const maxNode = document.querySelector("#max");
 const input = document.querySelector("#input");
 const btn = document.querySelector("#btn");
-console.log("btn")
-console.log(btn.innerText)
 
 const numArea = document.querySelector(".numInfo");
 
-const answer = 65;
+const answer = Math.floor(Math.random()*100 + 1);
+
 let minNum = parseInt(minNode.innerText);
 let maxNum = parseInt(maxNode.innerText);
-console.log(minNum);
-console.log(maxNum);
 
 btn.addEventListener("click", () => {
    const guessNum = input.value;
